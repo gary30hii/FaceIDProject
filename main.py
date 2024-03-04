@@ -40,7 +40,7 @@ while True:
                 # Save input image to application data/input_image folder
                 cv2.imwrite(os.path.join('application_data', 'input_images', 'input_image.jpg'), frame)
                 # Run verification
-                results, verified = verify(model, 0.475, 0.5 )
+                results, verified = verify(model, 0.85, 0.5 )
 
                 if verified:
                     print("verified")
